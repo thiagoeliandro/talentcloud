@@ -8,9 +8,9 @@
     padding: 0;
   }
   
-  header {
+  /* header {
      background-color: #333; 
-  }
+  } */
   
   header h1 {
       float: left;
@@ -38,11 +38,11 @@
   }
   
   header li a:hover {
-    background-color: #111;
+    background-color: white;
   }
   
   header li a.ativo {
-    background-color: red;
+    background-color: white;
   }
   
   main article {
@@ -68,15 +68,14 @@ main > div > img {
     color: white;
     text-align: center;
     padding: 5px;
-    /* position: fixed; */
     bottom: 0;
     width: 100vw;
   }
   
   main article p img {
         float: left;
-        height: 400px;
-        margin-right: 10px;
+        height: 350px;
+        margin-right: 20px;
   }
 
 
@@ -92,4 +91,7 @@ main {
     grid-auto-flow: dense;
   }
 
-  
+  main p {
+    text-align: justify;
+    font-size: 16px;
+  }

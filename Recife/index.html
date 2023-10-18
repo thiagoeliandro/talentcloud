@@ -1,136 +1,198 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" rel="stylesheet">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" rel="stylesheet">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 
-        <link rel="stylesheet" href="styles.css">
+            <link rel="stylesheet" href="styles.css">
 
-        <title>Recife - Marco Zero</title>
+            <title>Recife - Marco Zero</title>
+
     </head>
-    <body>
-        <header class="fixed-top">
-        
-            <div class="container">
-                <h1>Recife</h1>
-                <nav>
-                    <ul>
-                    <li><a href="#aeb" class="ativo">Principal</a></li>
-                    <li><a href="#marcozero">Marco Zero</a></li>
-                    <li><a href="#fotos">Galeria de imagens</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+        <h1 id="home"></h1> 
+        <body>
+            <header class="fixed-top">
+                <nav class="navbar bg-primary navbar-dark navbar-expand-md">
+                    <div class="container">
+                      <a href="#home" class="navbar-brand d-flex align-items-center"><img src="img/bandeira-recife2.svg" width="50"><h1>Recife</h1></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuBar">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="menuBar">
+                        <div class="navbar-nav ms-auto">
+                          <a href="#home" class="nav-link ms-auto">Principal</a>
+                          <div class="dropdown">
+                            <a href="#turismo" class="nav-link dropdown-toggle ms-auto" data-bs-toggle="dropdown">Pontos Turísticos</a>
+                            <ul class="dropdown-menu">
+                              <li class="nav-item"><a href="#marcozero" class="dropdown-item">Marco Zero</a></li>
+                              <li class="nav-item"><a href="#feira" class="dropdown-item">Centro de Artesanato</a></li>
+                              <li class="nav-ite"><a href="#centrohis" class="dropdown-item">Centro Histórico</a></li>
+                            </ul>                                                                                                              
+                          </div>
+                          <a href="#imagens" class="nav-link ms-auto">Galeria</a>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+            </header>
 
-                <!-- Início do carrousel de imagens -->
-                <div class="carousel slide carousel-fade" data-bs-ride="carousel" id="aeb">
-                    <div class="carousel-indicators">
-                      <button class="active" data-bs-target="#aeb" data-bs-slide-to="0"></button>
-                      <button data-bs-target="#aeb" data-bs-slide-to="1"></button>
-                      <button data-bs-target="#aeb" data-bs-slide-to="2"></button>
+            <main>
+                
+                <!-- Início do carrossel de imagens -->
+                <div class="carousel slide" data-bs-ride="carousel" id="aeb">
+                    <div class="carousel-indicators" id="home">
+                        <button class="active" data-bs-target="#aeb" data-bs-slide-to="0"></button>
+                        <button data-bs-target="#aeb" data-bs-slide-to="1"></button>
+                        <button data-bs-target="#aeb" data-bs-slide-to="2"></button>
                     </div>
                     <div class="carousel-inner">
-                      <div class="carousel-item active">
+                        <div class="carousel-item active">
                             <img src="img/marco-zero002.png" class="d-block w-100">
-                        <div class="carousel-caption">
-                            <h5 class="fw-bolder">MARCO ZERO - RECIFE/PE</h5>
-                          <!-- <p class="fst-italic">Aprender um idioma nunca esteve em tanta evidência como agora!</p> -->
+                            <div class="carousel-caption">
+                                <h5 class="fw-bolder">MARCO ZERO - RECIFE/PE</h5>
+                            </div>
                         </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img src="img/marco-zero003.png" class="d-block w-100">
+                        <div class="carousel-item">
+                            <img src="img/marco-zero003.png" class="d-block w-100">
                             <div class="carousel-caption">
                                 <h5 class="fw-bolder">CONHEÇA NOSSA HISTÓRIA!!!</h5>
-                          <!-- <p class="fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi minus quas nulla
-                            perferendis possimus
-                            facilis nostrum quae odit doloremque quis?</p> -->
+                            </div>
                         </div>
-                      </div>
                         <div class="carousel-item">
                             <img src="img/marco-zero004.png" class="d-block w-100">
-                        <div class="carousel-caption">
-                            <h5 class="fw-bolder">RECIFE TAMBÉM É HISTÓRIA!!!</h5>
-                          <!-- <p class="fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi minus quas nulla
-                            perferendis possimus
-                            facilis nostrum quae odit doloremque quis?</p> -->
+                            <div class="carousel-caption">
+                                <h5 class="fw-bolder">RECIFE TAMBÉM É HISTÓRIA!!!</h5>
+                            </div>
                         </div>
-                      </div>
                     </div>
-                    <button class="carousel-control-prev" data-bs-target="#aeb" data-bs-slide="prev"><span
-                        class="carousel-control-prev-icon"></span></button>
-                    <button class="carousel-control-next" data-bs-target="#aeb" data-bs-slide="next"><span
-                        class="carousel-control-next-icon"></span></button>
-                  </div>
-                  <!-- Fim do carrousel de imagens -->
+                    <button class="carousel-control-prev" data-bs-target="#aeb" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" data-bs-target="#aeb" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+                <!-- Fim do carrossel de imagens -->
+                
+                <section>
+                    <article>
+                        <div>
 
-        <main>            
+                            <h1>Recife, um bairro de Recife/PE.</h1>
+                            <p>Recife, mais conhecido como Recife Antigo, é um bairro da cidade do Recife, Pernambuco, Brasil que corresponde à parte leste do seu Centro Histórico. Em seu ponto mais oriental, no Porto do Recife, situa-se a Praça Rio Branco – o Marco Zero, margeada pelo encontro dos rios Capibaribe e Beberibe com o Oceano Atlântico.</p>
+                            <p>O bairro do Recife surgiu na primeira metade do século XVI. O ponto de origem da povoação foi um porto, construído para escoar pau-brasil e os produtos da atividade agro-açucareira de Olinda, então capital pernambucana.[2] Instalado o porto, em seguida houve a necessidade de construir depósitos para armazenar as mercadorias, também foram erguidas as casas para servir como residências dos trabalhadores portuários e, assim, nasceu a comunidade.</p>
+
+                            <p>Inicialmente o bairro era denominado Arrecife dos Navios e se estendia, desordenadamente, por uma área de aproximadamente dez hectares, com a construção das casas não seguindo nenhum ordenamento: a abertura de ruas obedecia apenas à vontade dos que ali se fixavam.<p>
+
+                            <p>Só durante o domínio holandês, precisamente com a chegada do conde Maurício de Nassau a Pernambuco (1637), é que o bairro passou a ter algum planejamento. Nessa época, eram 15 ruas e uma praça. Por conta da movimentação do porto, o povoado logo se tornaria bastante habitado. Em 1654, por exemplo, quando os holandeses deixaram Pernambuco, o hoje bairro do Recife já contava com trezentos prédios - entre os quais a Casa da Câmara, a Igreja do Corpo Santo, a Cadeia e vários Armazéns.<P>
+
+                            <p>Em 1709, os comerciantes locais receberam autorização da Coroa Portuguesa para instalar ali a Vila de Santo Antônio do Recife, o que só ocorreria dois anos mais tarde e depois de uma guerra civil com Olinda. No local do antigo ancoradouro, em 1918 foi inaugurado o Porto do Recife, o que deu um impulso ao desenvolvimento econômico do bairro. O London Bank e Associação de Comércio do Estado de Pernambuco foram instalados nessa época, quando o Recife Antigo passou por uma reformulação, destruindo alguns antigos sobrados para dar lugar a prédios mais modernos ao estilo das edificaçãos de Paris, capital da França, considerada um símbolo da modernidade. Entre as décadas de 1950 e 1970, o Recife Antigo viveu uma movimentada fase. No começo da década de 1980, quando deram início as operações do Porto de Suape, deixaram o Porto do Recife em plano secundário, e o bairro do Recife entrou em decadência. De grande centro comercial e importante ponto de embarque e desembarque de mercadorias para todo o nordeste brasileiro, o bairro do Recife passou a abrigar apenas escritórios contábeis ou de representação, e acima de tudo, os bordéis recifenses. Os seus moradores migraram para outras regiões do Recife, e com o tempo, o rico conjunto arquitetônico da área foi se deteriorando. Só na década de 1990 é que tiveram início os projetos de recuperação arquitetônica do casario do bairro do Recife.</p>
+
+                            <p>Em 2003, o bairro do Recife já contava com vários prédios históricos restaurados, e outros trechos do casario em recuperação e, pelo menos, três pólos de lazer consolidados. A população residente era insignificante, isso se comparada à de outras épocas, apenas 700 moradores, o que deu ao bairro o título de segundo bairro menos populoso da capital pernambucana. Mas, é para o Recife Antigo que não só a prefeitura, como também o governo do estado, estão pondo grandes programações turístico-culturais, como o Carnaval e as festividades do ciclo natalino recifense.</p>
+
+                            <h6><i>Fonte: wikipedia</i></h6>
+
+                        </div>
+                    </article>
+                </section>
+                
+                <section>                
+
+                    <article>
+                        <div id="marcozero">
+                            <h1>O Marco Zero de Recife no Brasil</h1>
+                            <h6>Conheça o Marco Zero em Recife Antigo e toda sua importância histórica!</h6>
+                            <p>
+                            <img src="img/marco-zero006.png"/>
         
-                <article id="marcozero">
-                    <h1>O Marco Zero de Recife no Brasil</h1>
-                    <h6>Conheça o Marco Zero em Recife Antigo e toda sua importância histórica!</h6>
-                    <p>
-                    <img src="img/marco-zero001.png"/>
+                            <p>O Marco Zero no Recife Antigo é um local de grande importância histórica e cultural na cidade de Recife, Pernambuco, Brasil. Este local é um marco simbólico que marca o ponto de nascimento da cidade de Recife, e é amplamente visitado por turistas e moradores locais. Além disso, é conhecido por receber diversas comemorações e manifestações culturais ao longo do ano, tornando-se um lugar de encontro para eventos como o Carnaval.</p>
+                            <p>O Marco Zero está localizado na Praça Rio Branco, às margens do Rio Capibaribe, e é o ponto de referência a partir do qual todas as medidas oficiais de distâncias rodoviárias são feitas. O nome "Marco Zero" popularizou-se desde 1938, quando um símbolo geográfico foi instalado no centro da praça, uma doação do Automóvel Clube de Pernambuco.</p>                        
+                            <p>O local oferece aos visitantes a oportunidade de explorar a arquitetura eclética dos prédios históricos que cercam a área, incluindo a antiga sede do London & River Plate Bank, a Associação Comercial de Pernambuco e o Edifício da Caixa Cultural. Além disso, o Marco Zero permite que os visitantes conheçam o Parque das Esculturas de Francisco Brennand, que abriga uma série de esculturas representando a cultura pernambucana.</p>
+                            <p>Outros pontos de interesse nas proximidades incluem o Centro de Artesanato de Pernambuco, onde os visitantes podem adquirir produtos artesanais de artesãos locais, o Museu Cais do Sertão, que explora a cultura do sertão nordestino, a Sinagoga Kahal Zur Israel e o Paço do Frevo, que celebram a cultura e a história judaica e o frevo, respectivamente.</p>
+                            <ol>
+                                <li>
+                                    <h4>Localização</h4>
+                                    <p>O Marco Zero está localizado no bairro do Recife Antigo, às margens do Rio Capibaribe, no centro histórico da cidade.</p>
+                                </li>
+                                <li>
+                                    <h4>Importância Histórica</h4>
+                                    <p>O Marco Zero é historicamente significativo porque marca o ponto de fundação da cidade de Recife. Foi neste local que os colonizadores portugueses estabeleceram a cidade em 1537.</p>
+                                </li>
+                                <li>
+                                    <h4>Símbolo Geográfico</h4>
+                                    <p>O termo "Marco Zero" refere-se a um símbolo geográfico no chão, que indica o ponto central a partir do qual todas as distâncias rodoviárias em Pernambuco são medidas.</p>
+                                </li>
+                                <li>
+                                    <h3>Monumento</h3>
+                                    <p>Além do símbolo geográfico, o Marco Zero apresenta um obelisco e uma bússola no chão, que indica as direções de várias cidades e pontos turísticos.</p>
+                                </li>
+                                <li>
+                                    <h3>Eventos Culturais</h3>
+                                    <p>O local é frequentemente usado para eventos culturais e festivais, incluindo o famoso Carnaval do Recife. É um ponto de encontro popular para celebrar festividades e manifestações culturais.</p>
+                                </li>
+                                <li>
+                                    <h3>Pontos Turísticos Próximos</h3>
+                                    <p>O Marco Zero está rodeado por diversos pontos de interesse, como o Mercado de São José, a Torre Malakoff, o Paço Alfândega e o Parque das Esculturas de Francisco Brennand.</p>
+                                </li>
+                                <li>
+                                    <h3>Entretenimento e Gastronomia</h3>
+                                    <p>A área ao redor do Marco Zero é conhecida por seus bares temáticos, restaurantes, lojas e entretenimento noturno. É um lugar vibrante para desfrutar da vida noturna e da culinária local.</p>
+                                </li>
+                            </ol>
+        
+                            </p>
+                        </div>
+                    </article>                    
 
-                    <p>O Marco Zero no Recife Antigo é um local de grande importância histórica e cultural na cidade de Recife, Pernambuco, Brasil. Este local é um marco simbólico que marca o ponto de nascimento da cidade de Recife, e é amplamente visitado por turistas e moradores locais. Além disso, é conhecido por receber diversas comemorações e manifestações culturais ao longo do ano, tornando-se um lugar de encontro para eventos como o Carnaval.</p>
-                    <p>O Marco Zero está localizado na Praça Rio Branco, às margens do Rio Capibaribe, e é o ponto de referência a partir do qual todas as medidas oficiais de distâncias rodoviárias são feitas. O nome "Marco Zero" popularizou-se desde 1938, quando um símbolo geográfico foi instalado no centro da praça, uma doação do Automóvel Clube de Pernambuco.</p>                        
-                    <p>O local oferece aos visitantes a oportunidade de explorar a arquitetura eclética dos prédios históricos que cercam a área, incluindo a antiga sede do London & River Plate Bank, a Associação Comercial de Pernambuco e o Edifício da Caixa Cultural. Além disso, o Marco Zero permite que os visitantes conheçam o Parque das Esculturas de Francisco Brennand, que abriga uma série de esculturas representando a cultura pernambucana.</p>
-                    <p>Outros pontos de interesse nas proximidades incluem o Centro de Artesanato de Pernambuco, onde os visitantes podem adquirir produtos artesanais de artesãos locais, o Museu Cais do Sertão, que explora a cultura do sertão nordestino, a Sinagoga Kahal Zur Israel e o Paço do Frevo, que celebram a cultura e a história judaica e o frevo, respectivamente.</p>
-                    <ol>
-                        <li>
-                            <h4>Localização</h4>
-                            <p>O Marco Zero está localizado no bairro do Recife Antigo, às margens do Rio Capibaribe, no centro histórico da cidade.</p>
-                        </li>
-                        <li>
-                            <h4>Importância Histórica</h4>
-                            <p>O Marco Zero é historicamente significativo porque marca o ponto de fundação da cidade de Recife. Foi neste local que os colonizadores portugueses estabeleceram a cidade em 1537.</p>
-                        </li>
-                        <li>
-                            <h4>Símbolo Geográfico</h4>
-                            <p>O termo "Marco Zero" refere-se a um símbolo geográfico no chão, que indica o ponto central a partir do qual todas as distâncias rodoviárias em Pernambuco são medidas.</p>
-                        </li>
-                        <li>
-                            <h3>Monumento</h3>
-                            <p>Além do símbolo geográfico, o Marco Zero apresenta um obelisco e uma bússola no chão, que indica as direções de várias cidades e pontos turísticos.</p>
-                        </li>
-                        <li>
-                            <h3>Eventos Culturais</h3>
-                            <p>O local é frequentemente usado para eventos culturais e festivais, incluindo o famoso Carnaval do Recife. É um ponto de encontro popular para celebrar festividades e manifestações culturais.</p>
-                        </li>
-                        <li>
-                            <h3>Pontos Turísticos Próximos</h3>
-                            <p>O Marco Zero está rodeado por diversos pontos de interesse, como o Mercado de São José, a Torre Malakoff, o Paço Alfândega e o Parque das Esculturas de Francisco Brennand.</p>
-                        </li>
-                        <li>
-                            <h3>Entretenimento e Gastronomia</h3>
-                            <p>A área ao redor do Marco Zero é conhecida por seus bares temáticos, restaurantes, lojas e entretenimento noturno. É um lugar vibrante para desfrutar da vida noturna e da culinária local.</p>
-                        </li>
-                    </ol>
+                </section>
 
-                    </p>
-                </article>
-            </div>
+                <section>                
 
-        <div>
-        <h1 id="fotos">Galeria de imagens</h1>
-            <div class="horz"><img src="img/marco-zero005.png"></div>
-            <div class="horz"><img src="img/marco-zero006.png"></div>
-            <div class="horz"><img src="img/marco-zero007.png"></div>
-            <div class="horz"><img src="img/marco-zero008.png"></div>
-            <div class="horz"><img src="img/marco-zero009.png"></div>
-            <div class="horz"><img src="img/marco-zero010.png"></div>
-        </div>
+                    <article>
+                        <h1 id="feira">Centro de Artesanato de Pernambuco - Roberto Lessa</h1>
+                        <h6>Uma variedade de itens feitos por artistas pernambucanos, como tecidos, cerâmica e estátuas de madeira.</h6>
+                        <p>
+                            <img src="img/artesanato.jpg"/>
+        
+                            <p>Parada obrigatória no Recife, o Centro de Artesanato de Pernambuco - Roberto Lessa chama atenção dos turistas e recifenses por diversos motivos, como diversidade artesanal, organização, corredores amplos, vista privilegiada para o mar e preços que cabem no bolso de todos. Há mais de nove anos anos funcionando em frente à Praça do Marco Zero, a loja conta com mais de 25 mil peças à venda, todas elas produzidas por cerca 1,8 mil artesãos de todas as regiões do Estado.</p>
+                            <p>Com uma área de mais de 2,5 mil m², o espaço traz ambientes decorados para que o visitante possa visualizar a utilização de peças artesanais em espaços como sala de estar, sala de jantar, quarto, entre outros, através de um olhar contemporâneo. A loja tem artesanato das mais diversas matérias-primas, como cerâmica, madeira, vidro, metal, renda, têxtil e outros.</p>                        
+                            <p>O Centro é mais uma ação integrada do Governo do Estado, através da Diretoria Geral de Promoção da Economia Criativa da Agência de Desenvolvimento Econômico de Pernambuco (Adepe), ligada à Secretaria de Desenvolvimento Econômico de Pernambuco (SDEC), e funciona como ponto de convergência entre todas as iniciativas do Programa do Artesanato de Pernambuco (PAPE), como a Fenearte, a Loja Itinerante do Artesanato de Pernambuco e o apoio aos artesãos nas diversas feiras realizadas no Brasil.</p>                        
+                            <p>Está localizado no Marco Zero no bairro do Recife Antigo, no centro histórico da cidade.</p>                               
+                        </p>
+                    </article>                    
 
-    </main>
+                </section>
+
+                <section>                
+
+                    <article>
+                        <h1 id="centrohis">Centro Histórico de Recife</h1>
+                        <h6>Conheça a história e as atrações do coração da cidade.</h6>
+                        <p>
+                            <img src="img/centrohis.jpg"/>
+        
+                            <p>O centro histórico do Recife abriga várias atrações e edifícios, em arquitetura colonial, que são patrimônios culturais e históricos. Saiba o que fazer e visitar neste lugar tão bonito! Para quem ama conhecer um patrimônio cultural, o centro histórico de Recife é um prato cheio. Recheado de atrações para turistas e moradores, teve influência de portugueses e holandeses, além de franceses, ingleses e outros povos. O local abriga a Praça do Marco Zero, o Paço Alfândega e outros pontos que contam a história da cidade, do estado e até mesmo do Brasil.</p>
+                            <p>Visitar o centro histórico de Recife é como fazer uma viagem cultural. Ele tem traços que datam o início da cidade, ainda no século 16, quando acontecia a colonização portuguesa. E, como a história do Recife Antigo é cheia de capítulos, também é possível ver uma forte influência holandesa — já que a região foi ocupada por eles entre os anos de 1630 a 1654. O então bairro marítimo era somente um começo de povoado, em 1548. Na época, pescadores e outras pessoas ligadas ao mar viviam no local, que era um porto para Olinda.</p>                        
+                            <p>No entanto, no início da colonização portuguesa, Recife surgiu como um ponto estratégico. Isso foi fortalecido com o domínio holandês, que fez a população passar para 2.700 pessoas em 1637. Ali, foi instalada a primeira sinagoga das Américas, e o comércio cresceu junto do bairro e de toda a cidade. A importância do centro histórico do Recife é tanta que, em 1998, o conjunto arquitetônico, paisagístico e urbanístico foi tombado como patrimônio cultural. Dessa forma, várias edificações, avenidas e ruas tiveram sua relevância histórica e cultural assegurada.</p>                        
+                            <p>Quer saber mais sobre o Centro Histórico de Recife e sugestão de 17 lugares para visitar? Acesse o site: <a href="https://meulugar.quintoandar.com.br/centro-historico-recife/#h-17-lugares-para-visitar-no-centro-historico-do-recife" target="_blank">QuintoAndar MeuLugar</a> e saiba mais.</p>
+                        </p>
+                    </article>                    
+
+                </section>
+
+
+            </main>
+        
+        </body>
 
         <footer>
-        <p>
-            Copyright &copy; <b>Thiago Eliandro®</b> 2023 :: Todos os direitos reservados.
-        </p>
+
+            <p>Copyright &copy; <b>Thiago Eliandro®</b> 2023 :: Todos os direitos reservados.</p>
+            
         </footer>
-    </body>
+
 </html>
