@@ -1,2 +1,7 @@
-# talentcloud
-Projeto final e alguns exercícios resolvidos.
+# Utilizando Flex Box
+
+Pratique com o jogo Flexbox Froggy e aplique as propriedades flex box na página que você criou.
+
+https://flexboxfroggy.com/ 
+
+Trabalhe esse código em seu IDE, suba ele para sua conta no GitHub e compartilhe o link desse projeto no campo ao lado para que outros desenvolvedores possam analisá-lo.
